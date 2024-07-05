@@ -3,12 +3,12 @@ Blueddisk is a Windows tool that utilizes Cygwin and `dd` to clone a drive parti
 
 ## Why the name "Blueddisk"?
 Well it's a portmanteau of "Blue", "dd", and "disk":
-- "Blue" is a reference to the "default Windows color" (ie. the color that is most often associated with Windows).
+- "Blue" is a reference to the "default Windows color" (i.e. the color that is most often associated with Windows).
 - "dd" as this uses the `dd` command through Cygwin.
 - "disk" since Blueddisk clones one storage disk/drive to another.
 
 ## --help (ie. How to Use Blueddisk)
-The following is the output of running Blueddisk with the --help or -h flag":
+The following is the output of running Blueddisk with the --help or -h flag:
 ```
 Blueddisk is a tool for Windows that utilizes Cygwin and `dd` to clone a drive partition to another.
 
