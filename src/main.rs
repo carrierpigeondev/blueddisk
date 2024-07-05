@@ -2,9 +2,11 @@ mod lib;
 
 use clap::{Arg, Command};
 
+const VERSION: &str = env!("CARGO_PKG_VERSION");  // version from Cargo.toml
+
 fn main() -> Result<(), Box<dyn std::error::Error>> {
-    let matches = Command::new("blueddisk")
-        .version("0.1.0")
+    let matches = Command::new("Blueddisk")
+        .version(VERSION)
         .about("Blueddisk is a tool for Windows that utilizes Cygwin and `dd` to clone a drive partition to another.")
         .arg(
             Arg::new("install-cygwin")

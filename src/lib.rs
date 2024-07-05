@@ -50,10 +50,12 @@ pub fn clone_dd() -> Result<(), Box<dyn std::error::Error>> {
     println!("Enter source partition name: ");
     let mut src_pname = String::new();
     io::stdin().read_line(&mut src_pname).expect("Failed to read line");
+    src_pname = src_pname.trim().parse().unwrap();
 
     println!("Enter destination partition name: ");
     let mut dest_pname = String::new();
     io::stdin().read_line(&mut dest_pname).expect("Failed to read line");
+    dest_pname = dest_pname.trim().parse().unwrap();
 
     println!("Press any enter to run dd...");
     let mut _temp = String::new();
